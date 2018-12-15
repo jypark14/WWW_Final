@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Sidney Crosby" />
+    <meta name="author" content="JY" />
+
+    <!-- Libraries that are imported for the website -->
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/flexslider.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- JS -->
+    <script src="assets/js/modernizr-2.6.2.min.js"></script>
+  </head>
+
+  <body>
+    <!-- Formatting the page layout -->
+    <div id="formatMain-page">
+      <!-- Nav bar (on the left side) -->
+      <a href="#" class="js-formatMain-nav-toggle formatMain-nav-toggle"
+        ><i></i
+      ></a>
+      <aside
+        id="formatMain-aside"
+        role="complementary"
+        class="border js-fullheight"
+      >
+        <h1 id="formatMain-logo">
+          <a href="index.html"><span>Sidney</span><span>Crosby</span></a>
+        </h1>
+        <nav id="formatMain-main-menu" role="navigation">
+          <ul>
+            <li><a href="about.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="feats.html">Achievements</a></li>
+            <li><a href="highlights.html">Highlights</a></li>
+            <li class="formatMain-active"><a href="contact.html">Contact</a></li>
+
+          </ul>
+        </nav>
+      </aside>
+
+      <div id="formatMain-main">
+        <!-- Sets out layout to flush left -->
+        <div id="get-in-touch" class="formatMain-bg-color">
+          <div class="formatMain-narrow-content">
+            <div class="row">
+              <br />
+              <br />
+              <br />
+              <br />
+              <h2>Contact Crosby</h2>
+              <br />
+            </div>
+
+            <div class="row">
+              <div
+                class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+                data-animate-effect="fadeInLeft"
+              >
+              <!-- Form for contact  -->
+                <div>
+                  <!-- Validates fields such as names  -->
+                  <form
+                    name="contact"
+                    action="form_submit.html"
+                    method="post"
+                    onSubmit="return validate();"
+                  >
+                    <fieldset>
+                      <h4 style="text-decoration: underline; ">
+                        Please leave Crosby a brief message below.
+                      </h4>
+                      Name:<br />
+                      <input
+                        type="text"
+                        name="Name"
+                        value=""
+                        size="20"
+                        maxlength="250"
+                        required
+                      />
+                      <br />
+                      E-mail Address:<br />
+                      <input
+                        type="text"
+                        name="email"
+                        value=""
+                        size="20"
+                        maxlength="50"
+                      />
+                      <br /><br />
+
+                      Your Message:<br />
+                      <textarea
+                        name="Message"
+                        rows="5"
+                        cols="50"
+                        maxlength="10000"
+                      >
+                      </textarea>
+                      <br /><br />
+                      <!-- LinkedIn connection -->
+                      <input type="checkbox" name="" value="" /> Please indicate
+                      if you would like to subscribe to Crosby Fan Page <br /><br />
+                      <!-- Will reload to confimration page  -->
+                      <input type="submit" value="Submit" />
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery.min.js"></script>
+    <!-- Waypoints -->
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <!-- Flexslider -->
+    <script src="assets/js/jquery.flexslider-min.js"></script>
+    <!-- MAIN JS -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
