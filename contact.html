@@ -38,6 +38,8 @@
             <li><a href="about.html">About</a></li>
             <li><a href="feats.html">Achievements</a></li>
             <li><a href="highlights.html">Highlights</a></li>
+            <li><a href="gallery.html">gallery</a></li>
+
             <li class="formatMain-active"><a href="contact.html">Contact</a></li>
 
           </ul>
@@ -75,38 +77,92 @@
                       <h4 style="text-decoration: underline; ">
                         Please leave Crosby a brief message below.
                       </h4>
-                      Name:<br />
+                      * Name:<br />
                       <input
                         type="text"
                         name="Name"
                         value=""
                         size="20"
-                        maxlength="250"
+                        maxlength="30"
                         required
                       />
-                      <br />
-                      E-mail Address:<br />
+                      <br /><br />
+                      * Password (to check for replies in future):<br />
+                      <input
+                        type="text"
+                        name="Password"
+                        value=""
+                        size="20"
+                        maxlength="30"
+                        required
+                      />
+                      <br /><br />
+                      * E-mail Address:<br />
                       <input
                         type="text"
                         name="email"
                         value=""
                         size="20"
                         maxlength="50"
+                        required
                       />
                       <br /><br />
 
-                      Your Message:<br />
+                       Phone Number:<br />
+                      <input
+                        type="tel"
+                        pattern="\d+" 
+                        name="phone"
+                        value=""
+                        size="20"
+                        maxlength="50"
+                      />
+                      <br /><br />
+
+                       * Zip Code:<br />
+                      <input
+                        type="zip"
+                        pattern="\d+" 
+                        name="Zip Code"
+                        value=""
+                        size="20"
+                        maxlength="5"
+                        required
+                      />
+                      <br /><br />
+
+                      Please indicate your favorite Crosby's Goal<br>
+                      <input type="checkbox" name="" value=""> Olympic winning goal <br>
+                      <input type="checkbox" name="" value=""> One handed backhand goal <br>
+                      <input type="checkbox" name="" value=""> Batting puck in the air <br>
+                      <input type="checkbox" name="" value=""> Other <br><br>
+
+                      
+
+                      Preferred method of communication <br>
+						            <input type="radio" name="contactchoice" value="emailcontact" /> : Phone <br />
+					            	<input type="radio" name="contactchoice" value="phonecontact" /> : Email <br /><br>
+                        
+                        How did you find this website?<br>
+						          <select>
+                        <option value="NULL">Please select an option</option>
+                        <option value="Web surfing">nhl.com</option>
+                        <option value="Social Media">Facebook / Twitter</option>
+                        <option value="Search Engine">Google</option>
+                        <option value="Other">Other</option>
+                      </select><br><br>
+
+                      * Your Message:<br />
                       <textarea
                         name="Message"
                         rows="5"
                         cols="50"
                         maxlength="10000"
+                        required
                       >
                       </textarea>
-                      <br /><br />
-                      <!-- LinkedIn connection -->
-                      <input type="checkbox" name="" value="" /> Please indicate
-                      if you would like to subscribe to Crosby Fan Page <br /><br />
+                      <br />
+                      <p> * are required fields  </p>
                       <!-- Will reload to confimration page  -->
                       <input type="submit" value="Submit" />
                     </fieldset>

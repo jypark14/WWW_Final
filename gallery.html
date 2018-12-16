@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Form Submit Page</title>
+    <title>Gallery Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Sidney Crosby" />
     <meta name="author" content="JY" />
@@ -34,45 +34,62 @@
         </h1>
         <nav id="formatMain-main-menu" role="navigation">
           <ul>
-            <li><a href="about.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="feats.html">Achievements</a></li>
             <li><a href="highlights.html">Highlights</a></li>
-            <li><a href="gallery.html">gallery</a></li>
-
-            <li class="formatMain-active"><a href="contact.html">Contact</a></li>
+            <li class="formatMain-active"><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
 
           </ul>
         </nav>
       </aside>
 
-      <!-- Submit confirmation page  -->
-      <div id="formatMain-main">
-        <div id="get-in-touch" class="formatMain-bg-color">
-          <div class="formatMain-narrow-content">
-            <div class="row">
-              <br />
-              <br />
-              <br />
-              <br />
-              <h2>Contact Crosby</h2>
-              <br />
-            </div>
-            <!-- Shows confirmation that the message has been received -->
-            <div class="row">
-              <div
-                class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
-                data-animate-effect="fadeInLeft"
-              >
-                <p>
-                  Thank you for contacting Sid. He will be in touch with you
-                  shortly. <br />
-                </p>
-                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-              </div>
-            </div>
+        <div id="formatMain-main">
+        <br /><br /><br /><br /><br />
+      
+        <h3>  Crosby Gallery </h3>
+
+          <div class="w3-content w3-display-container">
+            <img class="mySlides" src="assets/images/img1.jpg" style="width:80%">
+            <img class="mySlides" src="assets/images/img2.jpg" style="width:80%">
+            <img class="mySlides" src="assets/images/img3.jpg" style="width:80%">
+             <img class="mySlides" src="assets/images/img4.jpg" style="width:80%">
+            <img class="mySlides" src="assets/images/img5.jpg" style="width:80%">
+            <img class="mySlides" src="assets/images/img6.jpg" style="width:80%">
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
           </div>
-        </div>
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+
+</div>
+</div>
+      
+</body>
+</html>
+
+
+
+
       </div>
     </div>
 
@@ -82,7 +99,7 @@
     <script src="assets/js/jquery.waypoints.min.js"></script>
     <!-- Flexslider -->
     <script src="assets/js/jquery.flexslider-min.js"></script>
-    <!-- MAIN JS -->
+    <!-- JS -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
